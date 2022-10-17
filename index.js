@@ -1,24 +1,17 @@
 const { Client, GatewayIntentBits, Collection } = require('discord.js');
 const fs = require('node:fs');
 const path = require('node:path');
-const typeOrmConnection = require('./src/database/db');
 
 require('dotenv').config(); // Loading in .env file
 
 const client = new Client({ intents: [GatewayIntentBits.Guilds] }); // Creating a client
 
-client.once('ready', (c) => {
-    console.log(`Logged in as ${c.user.tag}!`);
-
-    typeOrmConnection.initialize().then(() => {
-        console.log('Initialized Database!');
-    });
-});
-
 client.commands = new Collection();
 const commandsPath = path.join(__dirname, 'src/commands');
+const eventsPath = path.join(__dirname, 'src/events');
 const commandFiles = fs.readdirSync(commandsPath).filter((file) => file.endsWith('.js'));
 
+// Loading in commands
 for (const file of commandFiles) {
     const filePath = path.join(commandsPath, file);
     const command = require(filePath);
@@ -31,22 +24,17 @@ for (const file of commandFiles) {
     }
 }
 
-client.on('interactionCreate', async (interaction) => {
-    if (!interaction.isCommand()) return;
+// Loading in events
+const eventFiles = fs.readdirSync(eventsPath).filter((file) => file.endsWith('.js'));
 
-    const command = interaction.client.commands.get(interaction.commandName);
-
-    if (!command) {
-        console.error(`No command matching ${interaction.commandName} was found.`);
-        return;
+for (const file of eventFiles) {
+    const filePath = path.join(eventsPath, file);
+    const event = require(filePath);
+    if (event.once) {
+        client.once(event.name, (...args) => event.execute(...args));
+    } else {
+        client.on(event.name, (...args) => event.execute(...args));
     }
-
-    try {
-        await command.execute(interaction);
-    } catch (error) {
-        console.error(error);
-        await interaction.reply({ content: 'There was an error while executing this command!', ephemeral: true });
-    }
-});
+}
 
 client.login(process.env.TOKEN); // Logging in the client
