@@ -8,8 +8,7 @@ module.exports = {
     data: new SlashCommandBuilder()
         .setName('hone')
         .setDescription('Hone your Gear!')
-        .addBooleanOption((option) => option.setName('armor').setDescription('Hone your Armor').setRequired(true))
-        .addBooleanOption((option) => option.setName('weapon').setDescription('Hone your Weapon').setRequired(true)),
+        .addStringOption((option) => option.setName('type').setDescription('Armor or Weapon').setRequired(true)),
     async execute(interaction) {
         typeormConnection
             .getRepository('User')
@@ -22,14 +21,12 @@ module.exports = {
                     );
                 } else {
                     // check which option was selected
-                    const armor = interaction.options.getBoolean('armor');
-                    const weapon = interaction.options.getBoolean('weapon');
-
-                    if (armor && weapon) {
-                        return interaction.reply('You can only hone one item at a time!', { ephemeral: true });
+                    const gear = interaction.options.getString('type');
+                    if (gear !== 'armor' && gear !== 'weapon') {
+                        return interaction.reply('Please select either armor or weapon.', { ephemeral: true });
                     }
 
-                    if (armor) {
+                    if (gear === 'armor') {
                         return tryHoningArmor(
                             interaction.user.id,
                             rows[0].honorShards,
@@ -40,7 +37,7 @@ module.exports = {
                             rows,
                             interaction,
                         );
-                    } else if (weapon) {
+                    } else if (gear === 'weapon') {
                         tryHoningWeapon(
                             interaction.user.id,
                             rows[0].honorShards,

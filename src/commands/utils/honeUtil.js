@@ -285,31 +285,31 @@ function tryHoningWeapon(clientId, honorShards, destructionStones, gold, silver,
             // check if user has enough materials to hone armor and reply accordingly
             if (destructionStones < honingTable.weapon0_10.destructionStones) {
                 return interaction.reply(
-                    `You do not have enough Guardian Stones to hone your weapon. You need ${honingTable.weapon0_10.destructionStones} Guardian Stones to hone your armor.`,
+                    `You do not have enough Destruction Stones to hone your weapon. You need ${honingTable.weapon0_10.destructionStones} Guardian Stones to hone your weapon.`,
                     { ephemeral: true },
                 );
             }
             if (gold < honingTable.weapon0_10.gold) {
                 return interaction.reply(
-                    `You do not have enough Gold to hone your weapon. You need ${honingTable.weapon0_10.gold} Gold to hone your armor.`,
+                    `You do not have enough Gold to hone your weapon. You need ${honingTable.weapon0_10.gold} Gold to hone your weapon.`,
                     { ephemeral: true },
                 );
             }
             if (silver < honingTable.weapon0_10.silver) {
                 return interaction.reply(
-                    `You do not have enough Silver to hone your weapon. You need ${honingTable.weapon0_10.silver} Silver to hone your armor.`,
+                    `You do not have enough Silver to hone your weapon. You need ${honingTable.weapon0_10.silver} Silver to hone your weapon.`,
                     { ephemeral: true },
                 );
             }
             if (leapstones < honingTable.weapon0_10.leapstones) {
                 return interaction.reply(
-                    `You do not have enough Leapstones to hone your weapon. You need ${honingTable.weapon0_10.leapstones} Leapstones to hone your armor.`,
+                    `You do not have enough Leapstones to hone your weapon. You need ${honingTable.weapon0_10.leapstones} Leapstones to hone your weapon.`,
                     { ephemeral: true },
                 );
             }
             if (honorShards < honingTable.weapon0_10.honorShards) {
                 return interaction.reply(
-                    `You do not have enough Honor Shards to hone your weapon. You need ${honingTable.weapon0_10.honorShards} Honor Shards to hone your armor.`,
+                    `You do not have enough Honor Shards to hone your weapon. You need ${honingTable.weapon0_10.honorShards} Honor Shards to hone your weapon.`,
                     { ephemeral: true },
                 );
             }
@@ -360,31 +360,31 @@ function tryHoningWeapon(clientId, honorShards, destructionStones, gold, silver,
             // check if user has enough materials to hone armor and reply accordingly
             if (destructionStones < honingTable.weapon10_20.destructionStones) {
                 return interaction.reply(
-                    `You do not have enough Guardian Stones to hone your weapon. You need ${honingTable.weapon10_20.destructionStones} Guardian Stones to hone your armor.`,
+                    `You do not have enough Destruction Stones to hone your weapon. You need ${honingTable.weapon10_20.destructionStones} Destruction Stones to hone your weapon.`,
                     { ephemeral: true },
                 );
             }
             if (gold < honingTable.weapon10_20.gold) {
                 return interaction.reply(
-                    `You do not have enough Gold to hone your weapon. You need ${honingTable.weapon10_20.gold} Gold to hone your armor.`,
+                    `You do not have enough Gold to hone your weapon. You need ${honingTable.weapon10_20.gold} Gold to hone your weapon.`,
                     { ephemeral: true },
                 );
             }
             if (silver < honingTable.weapon10_20.silver) {
                 return interaction.reply(
-                    `You do not have enough Silver to hone your weapon. You need ${honingTable.weapon10_20.silver} Silver to hone your armor.`,
+                    `You do not have enough Silver to hone your weapon. You need ${honingTable.weapon10_20.silver} Silver to hone your weapon.`,
                     { ephemeral: true },
                 );
             }
             if (leapstones < honingTable.weapon10_20.leapstones) {
                 return interaction.reply(
-                    `You do not have enough Leapstones to hone your weapon. You need ${honingTable.weapon10_20.leapstones} Leapstones to hone your armor.`,
+                    `You do not have enough Leapstones to hone your weapon. You need ${honingTable.weapon10_20.leapstones} Leapstones to hone your weapon.`,
                     { ephemeral: true },
                 );
             }
             if (honorShards < honingTable.weapon10_20.honorShards) {
                 return interaction.reply(
-                    `You do not have enough Honor Shards to hone your weapon. You need ${honingTable.weapon10_20.honorShards} Honor Shards to hone your armor.`,
+                    `You do not have enough Honor Shards to hone your weapon. You need ${honingTable.weapon10_20.honorShards} Honor Shards to hone your weapon.`,
                     { ephemeral: true },
                 );
             }
@@ -436,31 +436,31 @@ function tryHoningWeapon(clientId, honorShards, destructionStones, gold, silver,
             // check if user has enough materials to hone armor and reply accordingly
             if (destructionStones < honingTable.weapon21_30.destructionStones) {
                 return interaction.reply(
-                    `You do not have enough Guardian Stones to hone your weapon. You need ${honingTable.weapon21_30.destructionStones} Guardian Stones to hone your armor.`,
+                    `You do not have enough Destruction Stones to hone your weapon. You need ${honingTable.weapon21_30.destructionStones} Guardian Stones to hone your weapon.`,
                     { ephemeral: true },
                 );
             }
             if (gold < honingTable.weapon21_30.gold) {
                 return interaction.reply(
-                    `You do not have enough Gold to hone your weapon. You need ${honingTable.weapon21_30.gold} Gold to hone your armor.`,
+                    `You do not have enough Gold to hone your weapon. You need ${honingTable.weapon21_30.gold} Gold to hone your weapon.`,
                     { ephemeral: true },
                 );
             }
             if (silver < honingTable.weapon21_30.silver) {
                 return interaction.reply(
-                    `You do not have enough Silver to hone your weapon. You need ${honingTable.weapon10_20.silver} Silver to hone your armor.`,
+                    `You do not have enough Silver to hone your weapon. You need ${honingTable.weapon10_20.silver} Silver to hone your weapon.`,
                     { ephemeral: true },
                 );
             }
             if (leapstones < honingTable.weapon21_30.leapstones) {
                 return interaction.reply(
-                    `You do not have enough Leapstones to hone your weapon. You need ${honingTable.weapon21_30.leapstones} Leapstones to hone your armor.`,
+                    `You do not have enough Leapstones to hone your weapon. You need ${honingTable.weapon21_30.leapstones} Leapstones to hone your weapon.`,
                     { ephemeral: true },
                 );
             }
             if (honorShards < honingTable.weapon21_30.honorShards) {
                 return interaction.reply(
-                    `You do not have enough Honor Shards to hone your weapon. You need ${honingTable.weapon21_30.honorShards} Honor Shards to hone your armor.`,
+                    `You do not have enough Honor Shards to hone your weapon. You need ${honingTable.weapon21_30.honorShards} Honor Shards to hone your weapon.`,
                     { ephemeral: true },
                 );
             }
@@ -512,31 +512,31 @@ function tryHoningWeapon(clientId, honorShards, destructionStones, gold, silver,
             // check if user has enough materials to hone armor and reply accordingly
             if (destructionStones < honingTable.weapon31_40.destructionStones) {
                 return interaction.reply(
-                    `You do not have enough Guardian Stones to hone your weapon. You need ${honingTable.weapon31_40.destructionStones} Guardian Stones to hone your armor.`,
+                    `You do not have enough Destruction Stones to hone your weapon. You need ${honingTable.weapon31_40.destructionStones} Guardian Stones to hone your weapon.`,
                     { ephemeral: true },
                 );
             }
             if (gold < honingTable.weapon31_40.gold) {
                 return interaction.reply(
-                    `You do not have enough Gold to hone your weapon. You need ${honingTable.weapon31_40.gold} Gold to hone your armor.`,
+                    `You do not have enough Gold to hone your weapon. You need ${honingTable.weapon31_40.gold} Gold to hone your weapon.`,
                     { ephemeral: true },
                 );
             }
             if (silver < honingTable.weapon31_40.silver) {
                 return interaction.reply(
-                    `You do not have enough Silver to hone your weapon. You need ${honingTable.weapon31_40.silver} Silver to hone your armor.`,
+                    `You do not have enough Silver to hone your weapon. You need ${honingTable.weapon31_40.silver} Silver to hone your weapon.`,
                     { ephemeral: true },
                 );
             }
             if (leapstones < honingTable.weapon31_40.leapstones) {
                 return interaction.reply(
-                    `You do not have enough Leapstones to hone your weapon. You need ${honingTable.weapon31_40.leapstones} Leapstones to hone your armor.`,
+                    `You do not have enough Leapstones to hone your weapon. You need ${honingTable.weapon31_40.leapstones} Leapstones to hone your weapon.`,
                     { ephemeral: true },
                 );
             }
             if (honorShards < honingTable.weapon31_40.honorShards) {
                 return interaction.reply(
-                    `You do not have enough Honor Shards to hone your weapon. You need ${honingTable.weapon31_40.honorShards} Honor Shards to hone your armor.`,
+                    `You do not have enough Honor Shards to hone your weapon. You need ${honingTable.weapon31_40.honorShards} Honor Shards to hone your weapon.`,
                     { ephemeral: true },
                 );
             }
@@ -588,31 +588,31 @@ function tryHoningWeapon(clientId, honorShards, destructionStones, gold, silver,
             // check if user has enough materials to hone armor and reply accordingly
             if (destructionStones < honingTable.weapon41_50.destructionStones) {
                 return interaction.reply(
-                    `You do not have enough Guardian Stones to hone your weapon. You need ${honingTable.weapon41_50.destructionStones} Guardian Stones to hone your armor.`,
+                    `You do not have enough Destruction Stones to hone your weapon. You need ${honingTable.weapon41_50.destructionStones} Guardian Stones to hone your weapon.`,
                     { ephemeral: true },
                 );
             }
             if (gold < honingTable.weapon41_50.gold) {
                 return interaction.reply(
-                    `You do not have enough Gold to hone your weapon. You need ${honingTable.weapon41_50.gold} Gold to hone your armor.`,
+                    `You do not have enough Gold to hone your weapon. You need ${honingTable.weapon41_50.gold} Gold to hone your weapon.`,
                     { ephemeral: true },
                 );
             }
             if (silver < honingTable.weapon41_50.silver) {
                 return interaction.reply(
-                    `You do not have enough Silver to hone your weapon. You need ${honingTable.weapon41_50.silver} Silver to hone your armor.`,
+                    `You do not have enough Silver to hone your weapon. You need ${honingTable.weapon41_50.silver} Silver to hone your weapon.`,
                     { ephemeral: true },
                 );
             }
             if (leapstones < honingTable.weapon41_50.leapstones) {
                 return interaction.reply(
-                    `You do not have enough Leapstones to hone your weapon. You need ${honingTable.weapon41_50.leapstones} Leapstones to hone your armor.`,
+                    `You do not have enough Leapstones to hone your weapon. You need ${honingTable.weapon41_50.leapstones} Leapstones to hone your weapon.`,
                     { ephemeral: true },
                 );
             }
             if (honorShards < honingTable.weapon41_50.honorShards) {
                 return interaction.reply(
-                    `You do not have enough Honor Shards to hone your weapon. You need ${honingTable.weapon41_50.honorShards} Honor Shards to hone your armor.`,
+                    `You do not have enough Honor Shards to hone your weapon. You need ${honingTable.weapon41_50.honorShards} Honor Shards to hone your weapon.`,
                     { ephemeral: true },
                 );
             }
